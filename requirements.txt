@@ -1,1 +1,1 @@
-pip freeze > requirements.txt
+flask==2.3.2
