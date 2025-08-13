@@ -1,0 +1,64 @@
+/* Heading styles */
+h1 {
+  padding: 50px;
+  background-color: red;
+  color: yellow;
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  text-align: center;
+}
+
+/* Main container */
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 40px;
+  border: 20px solid rgb(12, 100, 125);
+  border-radius: 5%;
+  margin: 60px 60px 60px 6%;
+}
+
+/* Label styling */
+label {
+  color: white;
+  font-family: serif;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Dropdown styling */
+select {
+  font-size: 18px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor:progress;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: darkred;
+  font-size: 20px;
+}
+
+/* Optional: body background */
+body {
+  margin: 0;
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  background: linear-gradient(to right, #232526, #414345);
+  color: white;
+}

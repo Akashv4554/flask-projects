@@ -5,7 +5,6 @@ A collection of Flask-based web applications and experiments, showcasing API dev
 ## 📂 Projects
 This repository will include:
 - **Student Result System** – Role-based access with PostgreSQL integration.
-- **Waste Management Website** – Flask Blueprints and CRUD operations.
 - **Panchayat Management Portal** – Forms, file uploads, and bilingual support.
 - More Flask experiments and API demos.
 

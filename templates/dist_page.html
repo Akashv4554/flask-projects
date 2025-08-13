@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/dist_page.css')}}">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <center>
+        <h1><span id="element"></span></h1>
+        <div id="d2">
+            <img src="{{url_for('static',filename=sel_dist.image_path)}}" alt="{{sel_dist.name}}" title="{{sel_dist.name}}" width="400" height="300">
+        </div>
+        <br>
+        <br>
+        <div id="d1">
+            <p><span id="description"></span></p>
+        </div>
+        <button onclick="location.href='{{ url_for('home') }}';" title="redirects to home page">Home</button>
+    </center>
+     <script>
+    var titleTyped = new Typed('#element', {
+      strings: ['{{sel_dist.name}}', '{{sel_dist.name}} district', '{{sel_dist.name}} district of Karnataka'],
+      typeSpeed: 45,
+        backSpeed: 20,
+        loop: true
+    });
+    var descTyped = new Typed('#description', {
+      strings: ['{{sel_dist.description}}'],
+      typeSpeed: 30,
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header>
+        <h1><span id="element"></span></h1>
+    </header>
+    <main>
+        <form method="POST">
+            <label for="dist">select a district</label>
+            <select id="dist" name="dist">
+                <option value="bagalkote">bagalkote</option>
+                <option value="belagavi">belagavi</option>
+                <option value="bengaluru urban">bengaluru urban</option>
+                <option value="bengaluru rural">bengaluru rural</option>
+                <option value="bidar">bidar</option>
+                <option value="chamarajanagara">chamarajanagara</option>
+                <option value="chikkaballapura">chikkaballapura</option>
+                <option value="chikkamagaluru">chikkamagaluru</option>
+                <option value="chitradurga">chitradurga</option>
+                <option value="dakshina kannada">dakshina kannada</option>
+                <option value="davanagere">davanagere</option>
+                <option value="gadag">gadag</option>
+                <option value="hassan">hassan</option>
+                <option value="haveri">haveri</option>
+                <option value="kolar">kolar</option>
+                <option value="koppal">koppal</option>
+                <option value="mandya">mandya</option>
+                <option value="mysuru">mysuru</option>
+                <option value="raichur">raichur</option>
+                <option value="ramanagara">ramanagara</option>
+                <option value="shivamogga">shivamogga</option>
+                <option value="tumakuru">tumakuru</option>
+                <option value="udupi">udupi</option>
+                <option value="uttara kannada">uttara kannada</option>
+                <option value="vijayanagara">vijayanagara</option>
+                <option value="yadgir">yadgir</option>
+            </select>
+            <button type="submit">get data</input>
+        </form>
+    </main>
+        
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['kannada', 'karunadu', 'kannadiga', 'karnataka'],
+      typeSpeed: 45,
+      backSpeed: 20,
+      loop: true
+    });
+  </script>
+</body>
+</html>
